@@ -103,7 +103,7 @@ transformed_dataset = FacialKeypointsDataset(csv_file='data/training_frames_keyp
 # load training data in batches
 batch_size = 20
 learningRate = 0.001
-n_epochs = 30 # start small, and increase when you've decided on your model structure and hyperparams
+n_epochs = 500 # start small, and increase when you've decided on your model structure and hyperparams
 net = Net()
 
 model_dir = 'saved_models/'
