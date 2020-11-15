@@ -109,9 +109,9 @@ net = Net()
 model_dir = 'saved_models/'
 model_name = 'keypoints_model.pt'
 
-criterion = nn.MSELoss()
+# criterion = nn.MSELoss()
 # # criterion = nn.L1Loss()
-# criterion = nn.SmoothL1Loss()
+criterion = nn.SmoothL1Loss()
 optimizer = optim.Adam(net.parameters(), lr=learningRate)
 
 torch.cuda.empty_cache()
